@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Klutch CSS</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-black-gradient">
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        overflow-x: hidden;
+        line-height: 1.4;
+        -webkit-text-size-adjust: 100%;
+        -webkit-tap-highlight-color: var(--black);
+        color: var(--light);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+          "Helvetica Neue", sans-serif;
+      }
+      .code {
+        margin: 0.5rem 0;
+        padding: 0.5rem;
+        border-radius: 4px;
+        background: var(--dark-gradient);
+        box-shadow: var(--shadow);
+        font-family: monospace;
+        cursor: pointer;
+      }
+    </style>
+    <div class="w90 mx-auto">
+      <h1 class="h1 text-left pink mb0">KlutchCSS</h1>
+      <p class="text-left gray600 mt0">🔥 v0.1.2</p>
+      <hr />
+
+      <div class="flex column align-items-start">
+        <span id="size-text" class="fade">Sizing</span>
+        <span id="size-link" class="code flex align-items">
+          <svg
+            width="25"
+            height="25"
+            fill="currentColor"
+            class="mt-auto mb-auto mr2 gray300"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M8 7a.5.5 0 0 1 .5.5V9H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V10H6a.5.5 0 0 1 0-1h1.5V7.5A.5.5 0 0 1 8 7z"
+            />
+            <path
+              d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"
+            />
+            <path
+              d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"
+            />
+          </svg>
+
+          <span class="h5 gray300">
+            <span class="pink">@import</span>
+            <span class="teal">url</span>(<span class="green"
+              >"https://klutch-css.netlify.app/sizing.css"</span
+            >);</span
+          >
+        </span>
+        <br />
+
+        <span id="colors-text" class="fade">Color</span>
+        <span id="colors-link" class="code flex align-items">
+          <svg
+            width="25"
+            height="25"
+            fill="currentColor"
+            class="mt-auto mb-auto mr2 gray300"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M8 7a.5.5 0 0 1 .5.5V9H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V10H6a.5.5 0 0 1 0-1h1.5V7.5A.5.5 0 0 1 8 7z"
+            />
+            <path
+              d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"
+            />
+            <path
+              d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"
+            />
+          </svg>
+          <span class="h5 gray300">
+            <span class="pink">@import</span>
+            <span class="teal">url</span>(<span
+              class="green"
+              id="css-copy-2"
+              >"https://klutch-css.netlify.app/colors.css"</span
+            >);</span
+          >
+        </span>
+        <br />
+
+        <span id="complete-text" class="fade">Complete</span>
+        <span id="complete-link" class="code flex align-items">
+          <svg
+            width="25"
+            height="25"
+            fill="currentColor"
+            class="mt-auto mb-auto mr2 gray300"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M8 7a.5.5 0 0 1 .5.5V9H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V10H6a.5.5 0 0 1 0-1h1.5V7.5A.5.5 0 0 1 8 7z"
+            />
+            <path
+              d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"
+            />
+            <path
+              d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"
+            />
+          </svg>
+          <span class="h5 gray300">
+            <span class="pink">@import</span>
+            <span class="teal">url</span>(<span
+              id="css-copy-4"
+              class="green"
+              >"https://klutch-css.netlify.app/style.css"</span
+            >);</span
+          >
+        </span>
+      </div>
+      <br />
+
+      <!-- Colors -->
+      <div class="shadow-lg rounded-lg bg-dark-gradient">
+        <h2 class="h2 light p2 mx3 my2 w-auto">Colors</h2>
+        <div class="flex row align-items space-evenly w100">
+          <h4 class="rounded-sm px1 h5 mx-auto w-auto bg-light black">
+            .black
+          </h4>
+          <h4
+            class="rounded-sm px1 h5 mx-auto w-auto bg-light black95"
+          >
+            .black-95
+          </h4>
+          <h4
+            class="rounded-sm px1 h5 mx-auto w-auto bg-light black90"
+          >
+            .black-90
+          </h4>
+          <h4
+            class="rounded-sm px1 h5 mx-auto w-auto bg-light black75"
+          >
+            .black-75
+          </h4>
+          <h4
+            class="rounded-sm px1 h5 mx-auto w-auto bg-light black60"
+          >
+            .black-60
+          </h4>
+          <h4
+            class="rounded-sm px1 h5 mx-auto w-auto bg-light black50"
+          >
+            .black-50
+          </h4>
+          <h4
+            class="rounded-sm px1 h5 mx-auto w-auto bg-light black25"
+          >
+            .black-25
+          </h4>
+          <h4
+            class="rounded-sm px1 h5 mx-auto w-auto bg-light black25"
+          >
+            .black-10
+          </h4>
+        </div>
+        <div class="flex row align-items space-evenly w100">
+          <h4 class="rounded-sm px1 h5 mx-auto w-auto bg-light dark">
+            .dark
+          </h4>
+          <h4
+            class="rounded-sm px1 h5 mx-auto w-auto bg-light gray950"
+          >
+            .gray950
+          </h4>
+          <h4
+            class="rounded-sm px1 h5 mx-auto w-auto bg-light gray900"
+          >
+            .gray900
+          </h4>
+          <h4
+            class="rounded-sm px1 h5 mx-auto w-auto bg-light gray850"
+          >
+            .gray850
+          </h4>
+          <h4
+            class="rounded-sm px1 h5 mx-auto w-auto bg-light gray800"
+          >
+            .gray800
+          </h4>
+          <h4
+            class="rounded-sm px1 h5 mx-auto w-auto bg-light gray700"
+          >
+            .gray700
+          </h4>
+          <h4
+            class="rounded-sm px1 h5 mx-auto w-auto bg-light gray600"
+          >
+            .gray600
+          </h4>
+          <h4
+            class="rounded-sm px1 h5 mx-auto w-auto bg-light gray500"
+          >
+            .gray500
+          </h4>
+        </div>
+        <div class="flex row align-items space-evenly w100">
+          <h4
+            class="rounded-sm px1 h5 mx-auto w-auto bg-dark gray400"
+          >
+            .gray400
+          </h4>
+          <h4
+            class="rounded-sm px1 h5 mx-auto w-auto bg-dark gray300"
+          >
+            .gray300
+          </h4>
+          <h4
+            class="rounded-sm px1 h5 mx-auto w-auto bg-dark gray200"
+          >
+            .gray200
+          </h4>
+          <h4
+            class="rounded-sm px1 h5 mx-auto w-auto bg-dark gray100"
+          >
+            .gray100
+          </h4>
+          <h4 class="rounded-sm px1 h5 mx-auto w-auto bg-dark gray50">
+            .gray50
+          </h4>
+          <h4 class="rounded-sm px1 h5 mx-auto w-auto bg-dark gray25">
+            .gray25
+          </h4>
+          <h4 class="rounded-sm px1 h5 mx-auto w-auto bg-dark light">
+            .light
+          </h4>
+          <h4 class="rounded-sm px1 h5 mx-auto w-auto bg-dark white">
+            .white
+          </h4>
+        </div>
+      </div>
+      <br />
+
+      <!-- Background colors -->
+      <div class="shadow-lg rounded-lg bg-dark-gradient">
+        <h2 class="h2 light p2 mx3 my2 w-auto">Background colors</h2>
+        <!-- BG Black -->
+        <div class="flex row align-items space-evenly w100">
+          <h4 class="rounded-sm px1 h5 mx-auto w-auto bg-black">
+            .bg-black
+          </h4>
+          <h4 class="rounded-sm px1 h5 mx-auto w-auto bg-black95">
+            .bg-black95
+          </h4>
+          <h4 class="rounded-sm px1 h5 mx-auto w-auto bg-black90">
+            .bg-black90
+          </h4>
+          <h4 class="rounded-sm px1 h5 mx-auto w-auto bg-black75">
+            .bg-black75
+          </h4>
+          <h4 class="rounded-sm px1 h5 mx-auto w-auto bg-black75">
+            .bg-black60
+          </h4>
+          <h4 class="rounded-sm px1 h5 mx-auto w-auto bg-black50">
+            .bg-black50
+          </h4>
+          <h4 class="rounded-sm px1 h5 mx-auto w-auto bg-black25">
+            .bg-black25
+          </h4>
+          <h4 class="rounded-sm px1 h5 mx-auto w-auto bg-black10">
+            .bg-black10
+          </h4>
+        </div>
+
+        <!-- BG Dark -->
+        <div class="flex row align-items space-evenly w100">
+          <h4 class="rounded-sm px1 h5 mx-auto w-auto bg-dark">
+            .bg-dark
+          </h4>
+          <h4 class="rounded-sm px1 h5 mx-auto w-auto bg-gray950">
+            .bg-gray950
+          </h4>
+          <h4 class="rounded-sm px1 h5 mx-auto w-auto bg-gray900">
+            .bg-gray900
+          </h4>
+          <h4 class="rounded-sm px1 h5 mx-auto w-auto bg-gray850">
+            .bg-gray850
+          </h4>
+          <h4 class="rounded-sm px1 h5 mx-auto w-auto bg-gray800">
+            .bg-gray800
+          </h4>
+          <h4 class="rounded-sm px1 h5 mx-auto w-auto bg-gray700">
+            .bg-gray700
+          </h4>
+          <h4 class="rounded-sm px1 h5 mx-auto w-auto bg-gray600">
+            .bg-gray600
+          </h4>
+          <h4 class="rounded-sm px1 h5 mx-auto w-auto bg-gray500">
+            .bg-gray500
+          </h4>
+        </div>
+
+        <!-- BG Gray -->
+        <div class="flex row align-items space-evenly w100">
+          <h4
+            class="rounded-sm px1 h5 mx-auto w-auto dark bg-gray400"
+          >
+            .bg-gray400
+          </h4>
+          <h4
+            class="rounded-sm px1 h5 mx-auto w-auto dark bg-gray300"
+          >
+            .bg-gray300
+          </h4>
+          <h4
+            class="rounded-sm px1 h5 mx-auto w-auto dark bg-gray200"
+          >
+            .bg-gray200
+          </h4>
+          <h4
+            class="rounded-sm px1 h5 mx-auto w-auto dark bg-gray100"
+          >
+            .bg-gray100
+          </h4>
+          <h4 class="rounded-sm px1 h5 mx-auto w-auto dark bg-gray50">
+            .bg-gray50
+          </h4>
+          <h4 class="rounded-sm px1 h5 mx-auto w-auto dark bg-gray25">
+            .bg-gray25
+          </h4>
+          <h4 class="rounded-sm px1 h5 mx-auto w-auto dark bg-light">
+            .bg-light
+          </h4>
+          <h4 class="rounded-sm px1 h5 mx-auto w-auto dark bg-white">
+            .bg-white
+          </h4>
+        </div>
+
+        <!-- BG Red -->
+        <div class="flex row align-items space-evenly w100">
+          <h4 class="rounded-sm px1 h5 mx-auto w-auto dark bg-red">
+            .bg-red
+          </h4>
+          <h4
+            class="rounded-sm px1 h5 mx-auto w-auto dark bg-red-gradient"
+          >
+            .bg-red-gradient
+          </h4>
+          <h4
+            class="rounded-sm px1 h5 mx-auto w-auto dark bg-red-hover"
+          >
+            .bg-red-hover
+          </h4>
+          <h4 class="rounded-sm px1 h5 mx-auto w-auto dark bg-orange">
+            .bg-orange
+          </h4>
+          <h4
+            class="rounded-sm px1 h5 mx-auto w-auto dark bg-orange-gradient"
+          >
+            .bg-orange-gradient
+          </h4>
+          <h4
+            class="rounded-sm px1 h5 mx-auto w-auto dark bg-orange-hover"
+          >
+            .bg-orange-hover
+          </h4>
+        </div>
+
+        <!-- BG Yellow -->
+        <div class="flex row align-items space-evenly w100">
+          <h4 class="rounded-sm px1 h5 mx-auto w-auto dark bg-amber">
+            .bg-amber
+          </h4>
+          <h4
+            class="rounded-sm px1 h5 mx-auto w-auto dark bg-amber-gradient"
+          >
+            .bg-amber-gradient
+          </h4>
+          <h4
+            class="rounded-sm px1 h5 mx-auto w-auto dark bg-amber-hover"
+          >
+            .bg-amber-hover
+          </h4>
+          <h4 class="rounded-sm px1 h5 mx-auto w-auto dark bg-yellow">
+            .bg-yellow
+          </h4>
+          <h4
+            class="rounded-sm px1 h5 mx-auto w-auto dark bg-yellow-gradient"
+          >
+            .bg-yellow-gradient
+          </h4>
+          <h4
+            class="rounded-sm px1 h5 mx-auto w-auto dark bg-yellow-hover"
+          >
+            .bg-yellow-hover
+          </h4>
+        </div>
+
+        <!-- BG Green -->
+        <div class="flex row align-items space-evenly w100">
+          <h4
+            class="rounded-sm px1 h5 mx-auto w-auto dark bg-light-green"
+          >
+            .bg-light-green
+          </h4>
+          <h4
+            class="rounded-sm px1 h5 mx-auto w-auto dark bg-light-green-gradient"
+          >
+            .bg-light-green-gradient
+          </h4>
+          <h4
+            class="rounded-sm px1 h5 mx-auto w-auto dark bg-light-green-hover"
+          >
+            .bg-light-green-hover
+          </h4>
+          <h4 class="rounded-sm px1 h5 mx-auto w-auto dark bg-green">
+            .bg-green
+          </h4>
+          <h4
+            class="rounded-sm px1 h5 mx-auto w-auto dark bg-green-gradient"
+          >
+            .bg-green-gradient
+          </h4>
+          <h4
+            class="rounded-sm px1 h5 mx-auto w-auto dark bg-green-hover"
+          >
+            .bg-green-hover
+          </h4>
+        </div>
+
+        <!-- BG Blue -->
+        <div class="flex row align-items space-evenly w100">
+          <h4
+            class="rounded-sm px1 h5 mx-auto w-auto dark bg-light-blue"
+          >
+            .bg-light-blue
+          </h4>
+          <h4
+            class="rounded-sm px1 h5 mx-auto w-auto dark bg-light-blue-gradient"
+          >
+            .bg-light-blue-gradient
+          </h4>
+          <h4
+            class="rounded-sm px1 h5 mx-auto w-auto dark bg-light-blue-hover"
+          >
+            .bg-light-blue-hover
+          </h4>
+          <h4 class="rounded-sm px1 h5 mx-auto w-auto dark bg-blue">
+            .bg-blue
+          </h4>
+          <h4
+            class="rounded-sm px1 h5 mx-auto w-auto dark bg-blue-gradient"
+          >
+            .bg-blue-gradient
+          </h4>
+          <h4
+            class="rounded-sm px1 h5 mx-auto w-auto dark bg-blue-hover"
+          >
+            .bg-blue-hover
+          </h4>
+        </div>
+
+        <!-- BG Pink -->
+        <div class="flex row align-items space-evenly w100">
+          <h4 class="rounded-sm px1 h5 mx-auto w-auto dark bg-purple">
+            .bg-purple
+          </h4>
+          <h4
+            class="rounded-sm px1 h5 mx-auto w-auto dark bg-purple-gradient"
+          >
+            .bg-purple-gradient
+          </h4>
+          <h4
+            class="rounded-sm px1 h5 mx-auto w-auto dark bg-purple-hover"
+          >
+            .bg-purple-hover
+          </h4>
+
+          <h4 class="rounded-sm px1 h5 mx-auto w-auto dark bg-pink">
+            .bg-pink
+          </h4>
+          <h4
+            class="rounded-sm px1 h5 mx-auto w-auto dark bg-pink-gradient"
+          >
+            .bg-pink-gradient
+          </h4>
+          <h4
+            class="rounded-sm px1 h5 mx-auto w-auto dark bg-pink-hover"
+          >
+            .bg-pink-hover
+          </h4>
+        </div>
+      </div>
+      <br />
+
+      <!-- Typography -->
+      <div class="shadow-lg rounded-lg bg-dark-gradient">
+        <h2 class="h2 light p2 mx3 my1 w-auto">Typography</h2>
+        <div class="flex row align-items space-evenly w100">
+          <h1 class="rounded-sm px1 mx-auto w-auto h1">.h1</h1>
+          <h2 class="rounded-sm px1 mx-auto w-auto h2">.h2</h2>
+          <h3 class="rounded-sm px1 mx-auto w-auto h3">.h3</h3>
+          <h4 class="rounded-sm px1 mx-auto w-auto h4">.h4</h4>
+          <h5 class="rounded-sm px1 mx-auto w-auto h5">.h5</h5>
+          <h6 class="rounded-sm px1 mx-auto w-auto h6">.h6</h6>
+        </div>
+        <div class="flex row align-items space-evenly w100">
+          <p class="rounded-sm px1 mx-auto w-auto p">Paragraph</p>
+          <p class="rounded-sm px1 mx-auto w-auto p bold">.bold</p>
+          <p class="rounded-sm px1 mx-auto w-auto p italic">
+            .italic
+          </p>
+          <p class="rounded-sm px1 mx-auto w-auto p underline">
+            .underline
+          </p>
+          <p class="rounded-sm px1 mx-auto w-auto p strikethrough">
+            .strikethrough
+          </p>
+          <p class="rounded-sm px1 mx-auto w-auto small">.small</p>
+        </div>
+      </div>
+      <br />
+
+      <!-- Components -->
+      <div class="shadow-lg rounded-lg bg-dark-gradient">
+        <h2 class="h2 light p2 pt4 mx4 my2 w-auto">Buttons</h2>
+        <div class="flex row align-items space-between mx5">
+          <button class="btn btn-sm bg-light-green-gradient shadow">
+            Small | .btn-sm
+          </button>
+          <button class="btn btn-md bg-blue-gradient black shadow">
+            Medium | .btn-md
+          </button>
+          <button class="btn btn-lg bg-red-gradient shadow">
+            Large | .btn-lg
+          </button>
+          <button
+            class="btn btn-md bg-dark-gradient border border-pink pink shadow"
+          >
+            Border | .border
+          </button>
+          <button
+            class="btn btn-md rounded-full bg-dark-gradient blue shadow"
+          >
+            Rounded | .rounded-full
+          </button>
+        </div>
+        <br />
+        <div class="flex row align-items space-evenly w-auto m2">
+          <button
+            class="btn btn-block bg-amber-gradient black shadow mx2"
+          >
+            Block | .btn-block
+          </button>
+        </div>
+        <br />
+        <hr />
+
+        <h2 class="h2 light p2 mx3 my2 w-auto">Alerts</h2>
+        <div class="flex column align-items justify-content w100">
+          <div
+            class="alert-banner shadow-lg rounded-sm bg-green-gradient"
+          >
+            <h3 class="black h4">
+              This is an alert banner | .alert-banner
+            </h3>
+            <div
+              class="flex align-items justify-content rounded-circle bg-black10"
+            >
+              <svg
+                width="30"
+                height="30"
+                class="m-auto black"
+                fill="currentColor"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"
+                />
+              </svg>
+            </div>
+          </div>
+
+          <br />
+
+          <div
+            class="alert-banner shadow-lg rounded-sm bg-amber-gradient"
+          >
+            <h3 class="black h4">
+              This is an alert banner | .alert-banner
+            </h3>
+            <div
+              class="flex align-items justify-content rounded-circle bg-black10"
+            >
+              <svg
+                width="30"
+                height="30"
+                class="m-auto black"
+                fill="currentColor"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"
+                />
+              </svg>
+            </div>
+          </div>
+
+          <br />
+
+          <div
+            class="alert-banner shadow-lg rounded-sm bg-red-gradient"
+          >
+            <h3 class="black h4">
+              This is an alert banner | .alert-banner
+            </h3>
+            <div
+              class="flex align-items justify-content rounded-circle bg-black10"
+            >
+              <svg
+                width="30"
+                height="30"
+                class="m-auto black"
+                fill="currentColor"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <br />
+      </div>
+      <br />
+
+      <!-- Sizing % -->
+      <div class="shadow-lg rounded-lg bg-dark-gradient">
+        <h2 class="h2 light p2 mx3 my1 w-auto">Sizing</h2>
+        <div
+          class="w100 dark bg-red-gradient vh10 text-center flex align-items justify-content"
+        >
+          .w100
+        </div>
+        <br />
+        <div class="mx0 flex align-items">
+          <div
+            class="w90 dark bg-blue-gradient vh10 text-center flex align-items justify-content"
+          >
+            .w90
+          </div>
+          <div
+            class="w10 dark bg-light-blue-gradient vh10 text-center flex align-items justify-content"
+          >
+            .w10
+          </div>
+        </div>
+        <br />
+        <div class="mx0 flex align-items">
+          <div
+            class="w75 dark bg-green-gradient vh10 text-center flex align-items justify-content"
+          >
+            .w75
+          </div>
+          <div
+            class="w25 dark bg-light-green-gradient vh10 text-center flex align-items justify-content"
+          >
+            .w25
+          </div>
+        </div>
+        <br />
+        <div class="mx0 flex align-items">
+          <div
+            class="w50 dark bg-light-gradient vh10 text-center flex align-items justify-content"
+          >
+            .w50
+          </div>
+          <div
+            class="light w50 bg-black-gradient vh10 text-center flex align-items justify-content"
+          >
+            .w50
+          </div>
+        </div>
+        <br />
+        <div class="mx0 flex align-items">
+          <div
+            class="w50 dark bg-purple-gradient vh10 text-center flex align-items justify-content"
+          >
+            .w50
+          </div>
+          <div
+            class="w20 dark bg-pink-gradient vh10 text-center flex align-items justify-content"
+          >
+            .w20
+          </div>
+          <div
+            class="w15 dark bg-orange-gradient vh10 text-center flex align-items justify-content"
+          >
+            .w15
+          </div>
+          <div
+            class="w10 dark bg-amber-gradient vh10 text-center flex align-items justify-content"
+          >
+            .w10
+          </div>
+          <div
+            class="w5 dark bg-yellow-gradient vh10 text-center flex align-items justify-content"
+          >
+            .w5
+          </div>
+        </div>
+      </div>
+      <br />
+    </div>
+    <br />
+    <div class="shadow-lg rounded-lg bg-dark-gradient">
+      <div
+        class="vw100 mx0 bg-red-gradient dark vh10 text-center flex align-items justify-content"
+      >
+        .vw100
+      </div>
+      <br />
+      <div class="mx0 flex align-items">
+        <div
+          class="vw75 dark bg-blue-gradient vh10 text-center flex align-items justify-content"
+        >
+          .vw75
+        </div>
+        <div
+          class="vw25 dark bg-light-blue-gradient vh10 text-center flex align-items justify-content"
+        >
+          .vw25
+        </div>
+      </div>
+      <br />
+      <div class="mx0 flex align-items">
+        <div
+          class="vw50 dark bg-teal-gradient vh10 text-center flex align-items justify-content"
+        >
+          .vw50
+        </div>
+        <div
+          class="vw25 dark bg-green-gradient vh10 text-center flex align-items justify-content"
+        >
+          .vw25
+        </div>
+        <div
+          class="vw25 dark bg-light-green-gradient vh10 text-center flex align-items justify-content"
+        >
+          .vw25
+        </div>
+      </div>
+      <br />
+      <div class="mx0 flex align-items">
+        <div
+          class="vw50 dark bg-purple-gradient vh10 text-center flex align-items justify-content"
+        >
+          .vw50
+        </div>
+        <div
+          class="vw20 dark bg-pink-gradient vh10 text-center flex align-items justify-content"
+        >
+          .vw20
+        </div>
+        <div
+          class="vw15 dark bg-orange-gradient vh10 text-center flex align-items justify-content"
+        >
+          .vw15
+        </div>
+        <div
+          class="vw10 dark bg-amber-gradient vh10 text-center flex align-items justify-content"
+        >
+          .vw10
+        </div>
+        <div
+          class="vw5 dark bg-yellow-gradient vh10 text-center flex align-items justify-content"
+        >
+          .vw5
+        </div>
+      </div>
+    </div>
+    <script defer>
+      const sizeLink = document.getElementById("size-link");
+      const sizeText = document.getElementById("size-text");
+      const colorsLink = document.getElementById("colors-link");
+      const colorsText = document.getElementById("colors-text");
+      const completeLink = document.getElementById("complete-link");
+      const completeText = document.getElementById("complete-text");
+
+      sizeLink.onclick = () => document.execCommand("copy");
+      colorsLink.onclick = () => document.execCommand("copy");
+      completeLink.onclick = () => document.execCommand("copy");
+
+      sizeLink.addEventListener("copy", function (event) {
+        event.preventDefault();
+        if (event.clipboardData) {
+          event.clipboardData.setData(
+            "text/plain",
+            `@import url("https://klutch-css.netlify.app/sizing.css");`
+          );
+          sizeText.innerText = "✔︎ Copied!";
+          sizeText.classList.add("green");
+
+          colorsText.innerText = "Color";
+          colorsText.classList.remove("green");
+
+          completeText.innerText = "Complete";
+          completeText.classList.remove("green");
+        }
+      });
+
+      colorsLink.addEventListener("copy", function (event) {
+        event.preventDefault();
+        if (event.clipboardData) {
+          event.clipboardData.setData(
+            "text/plain",
+            `@import url("https://klutch-css.netlify.app/colors.css");`
+          );
+
+          sizeText.innerText = "Sizing";
+          sizeText.classList.remove("green");
+
+          colorsText.innerText = "✔︎ Copied!";
+          colorsText.classList.add("green");
+
+          completeText.innerText = "Complete";
+          completeText.classList.remove("green");
+        }
+      });
+
+      completeLink.addEventListener("copy", function (event) {
+        event.preventDefault();
+        if (event.clipboardData) {
+          event.clipboardData.setData(
+            "text/plain",
+            `@import url("https://klutch-css.netlify.app/style.css");`
+          );
+
+          sizeText.innerText = "Sizing";
+          sizeText.classList.remove("green");
+
+          colorsText.innerText = "Color";
+          colorsText.classList.remove("green");
+
+          completeText.innerText = "✔︎ Copied!";
+          completeText.classList.add("green");
+        }
+      });
+    </script>
+  </body>
+</html>
